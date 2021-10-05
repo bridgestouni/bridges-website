@@ -1,0 +1,343 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.officeHoursCard {
+  /* border: 1px solid red; */
+  max-width: 400px;
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.officeHoursCardImageContainer {
+  /* border: 1px solid green; */
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+
+.officeHoursCardImage {
+  height: 400px;
+  position: relative;
+}
+
+.ChiddhanyaOfficeHoursImage {
+  left: -55px;
+}
+
+.LeesaOfficeHoursImage {
+  left: -40px;
+}
+
+.HarjotOfficeHoursImage {
+  left: -70px;
+}
+
+.ViOfficeHoursImage {
+  left: -100px;
+}
+
+.HussainOfficeHoursImage {
+  left: -90px;
+}
+
+.StephanieOfficeHoursImage {
+  left: -110px;
+}
+
+.AviOfficeHoursImage {
+  left: -65px;
+}
+
+.AndrickOfficeHoursImage {
+  left: -75px;
+}
+
+.VarunOfficeHoursImage {
+  left: -60px;
+}
+
+.officeHoursCardContent {
+  /* border: 1px solid red; */
+  padding-top: 20px;
+}
+
+.officeHoursCardName {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.officeHoursCardSchool {
+  /* border: 1px solid green; */
+  font-size: 1.2em;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.officeHoursCardBio {
+  /* border: 1px solid magenta; */
+  font-size: 1em;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.officeHoursCardLink {
+  /* border: 1px solid red; */
+  font-size: 1.1em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+  .officeHoursCard {
+    max-width: 350px;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 350px;
+    width: 350px;
+  }
+
+  .officeHoursCardImage {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .officeHoursCard {
+    max-width: 300px;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 300px;
+    width: 300px;
+  }
+
+  .officeHoursCardImage {
+    height: 300px;
+  }
+
+  .ChiddhanyaOfficeHoursImage {
+    left: -45px;
+  }
+
+  .LeesaOfficeHoursImage {
+    left: -40px;
+  }
+
+  .HarjotOfficeHoursImage {
+    left: -60px;
+  }
+
+  .ViOfficeHoursImage {
+    left: -80px;
+  }
+
+  .HussainOfficeHoursImage {
+    left: -70px;
+  }
+
+  .StephanieOfficeHoursImage {
+    left: -85px;
+  }
+
+  .AviOfficeHoursImage {
+    left: -55px;
+  }
+
+  .AndrickOfficeHoursImage {
+    left: -60px;
+  }
+
+  .VarunOfficeHoursImage {
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .officeHoursCard {
+    max-width: calc(100% - 40px);
+    flex-basis: 33%;
+    padding: 0 20px;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 250px;
+    width: 250px;
+  }
+
+  .officeHoursCardImage {
+    height: 250px;
+  }
+
+  .officeHoursCardName {
+    font-size: 1.4em;
+  }
+  .officeHoursCardSchool {
+    font-size: 1em;
+  }
+  .officeHoursCardBio {
+    font-size: 0.9em;
+  }
+  .officeHoursCardLink {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  .officeHoursCard {
+    /* flex-basis: 50%; */
+    padding: 0 20px;
+    flex-basis: auto;
+    width: 350px;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 310px;
+    width: 310px;
+  }
+
+  .officeHoursCardImage {
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .officeHoursCard {
+    width: 300px;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 260px;
+    width: 260px;
+  }
+
+  .officeHoursCardImage {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .officeHoursCard {
+    width: 260px;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 220px;
+    width: 220px;
+  }
+
+  .officeHoursCardImage {
+    height: 220px;
+  }
+  .ChiddhanyaOfficeHoursImage {
+    left: -35px;
+  }
+
+  .LeesaOfficeHoursImage {
+    left: -25px;
+  }
+
+  .HarjotOfficeHoursImage {
+    left: -40px;
+  }
+
+  .ViOfficeHoursImage {
+    left: -60px;
+  }
+
+  .HussainOfficeHoursImage {
+    left: -50px;
+  }
+
+  .StephanieOfficeHoursImage {
+    left: -65px;
+  }
+
+  .AviOfficeHoursImage {
+    left: -35px;
+  }
+
+  .AndrickOfficeHoursImage {
+    left: -40px;
+  }
+
+  .VarunOfficeHoursImage {
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .officeHoursCard {
+    width: 100%;
+  }
+
+  .officeHoursCardImageContainer {
+    height: 260px;
+    width: 260px;
+  }
+
+  .officeHoursCardImage {
+    height: 260px;
+  }
+
+  .officeHoursCardName {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .officeHoursCardSchool {
+    text-align: center;
+  }
+  .officeHoursCardBio {
+    text-align: center;
+  }
+  .officeHoursCardLink {
+    display: block;
+    text-align: center;
+  }
+
+  .ChiddhanyaOfficeHoursImage {
+    left: -35px;
+  }
+
+  .LeesaOfficeHoursImage {
+    left: -25px;
+  }
+
+  .HarjotOfficeHoursImage {
+    left: -40px;
+  }
+
+  .ViOfficeHoursImage {
+    left: -65px;
+  }
+
+  .HussainOfficeHoursImage {
+    left: -60px;
+  }
+
+  .StephanieOfficeHoursImage {
+    left: -75px;
+  }
+
+  .AviOfficeHoursImage {
+    left: -45px;
+  }
+
+  .AndrickOfficeHoursImage {
+    left: -50px;
+  }
+
+  .VarunOfficeHoursImage {
+    left: -40px;
+  }
+}

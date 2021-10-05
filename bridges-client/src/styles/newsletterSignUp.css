@@ -1,0 +1,138 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --secondarySoft: #eef3ff;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.newsletterSignUp {
+  /* border: 1px solid red; */
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.signUpForm {
+  /* border: 1px solid blue; */
+  border-radius: 300px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(204, 210, 228, 0.5);
+}
+
+.formContent {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.emailIcon {
+  width: 22px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+#inputEmail {
+  border: none;
+  font-size: 0.9em;
+  width: auto;
+  flex-grow: 1;
+  padding-right: 10px;
+  color: var(--secondary);
+}
+
+#inputEmail:focus,
+.heroEmailInputSubmit:focus {
+  outline: none;
+}
+
+.heroEmailInputSubmit {
+  border: none;
+  padding: 11px 25px;
+  color: white;
+  background-color: var(--accent);
+  font-weight: 600;
+  border-radius: 35px;
+  font-size: 0.9em;
+}
+
+.signUpTagline {
+  font-size: 0.8em;
+  color: #445277;
+  opacity: 75%;
+  padding-top: 25px;
+}
+
+.newsletterSignUpFooter {
+  /* border: 1px solid red; */
+}
+
+.signUpFormFooter {
+  /* border: 1px solid blue; */
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.signUpFormFooter::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--secondarySoft);
+  opacity: 50%;
+}
+
+.heroEmailInputFooter {
+  /* border: 1px solid green; */
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 0.9em;
+  color: var(--secondarySoft);
+  opacity: 50%;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.heroEmailInputFooter::placeholder {
+  color: var(--secondarySoft);
+  opacity: 50%;
+}
+
+.heroEmailInputFooter:focus {
+  outline: none;
+}
+
+.heroEmailInputSubmitFooter {
+  /* border: 1px solid orange; */
+  background: none;
+  border: none;
+}
+
+.arrowFooter {
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 576px) {
+  #inputEmail {
+    /* border: 1px solid red; */
+    width: 50px;
+    /* width: 50px; */
+  }
+
+  .emailIcon {
+    margin-left: 10px;
+  }
+
+  .heroEmailInputSubmit {
+    padding: 11px 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}

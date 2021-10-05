@@ -1,0 +1,226 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.blog {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blogHero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* border: 1px solid red; */
+}
+
+.blogHeader {
+  font-size: 3.8em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.blogTagline {
+  color: var(--secondary);
+  padding-top: 5px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.heroSearch {
+  /* border: 1px solid purple; */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.searchArticlesForm {
+  /* border: 1px solid blue; */
+  border-radius: 300px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(204, 210, 228, 0.5);
+}
+
+.articlesFormContent {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.bookIcon {
+  width: 22px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+#inputArticleSearch {
+  border: none;
+  font-size: 0.9em;
+  width: auto;
+  flex-grow: 1;
+  padding-right: 10px;
+  color: var(--secondary);
+}
+
+#inputArticleSearch:focus,
+.articleSearchInputSubmit:focus {
+  outline: none;
+}
+
+.articleSearchInputSubmit {
+  border: none;
+  padding: 11px 25px;
+  color: white;
+  background-color: var(--accent);
+  font-weight: 600;
+  border-radius: 35px;
+  font-size: 0.9em;
+}
+
+.searchFilters {
+  /* border: 1px solid red; */
+  padding-top: 20px;
+}
+
+.filterList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.filterListSecondary {
+  display: none;
+}
+
+.filterRow1,
+.filterRow2 {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid purple; */
+}
+
+.filterButton {
+  font-size: 0.9em;
+  padding: 4px 12px;
+  margin: 0px 10px;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  color: var(--dark);
+  background-color: #ccd2e440;
+  text-align: center;
+  /* flex-basis: 20%; */
+}
+
+.filterButton.activeFilter {
+  color: white;
+  background-color: var(--accent);
+}
+
+.blogSearchContainer {
+  /* border: 2px solid green; */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 120px;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.articleNotFoundContainer {
+  width: 100%;
+  padding: 40px 0px;
+  background-color: #ccd2e415;
+  border-radius: 20px;
+}
+
+.articleNotFound {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--dark);
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .blogHeader {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 650px) {
+  .blogSearchContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroSearch {
+    width: auto;
+    /* border: 1px solid green; */
+  }
+
+  .filterRow1,
+  .filterRow2 {
+    flex-wrap: wrap;
+  }
+
+  .filterButton {
+    margin: 0 5px;
+  }
+
+  .filterListSecondary {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filterListPrimary {
+    display: none;
+  }
+
+  #inputArticleSearch {
+    width: 20px;
+  }
+
+  .articleSearchInputSubmit {
+    padding: 11px 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blogHeader {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .brand {
+    font-size: 1.5em;
+  }
+  .nav-button {
+    padding: 11px 15px;
+  }
+  .logo {
+    height: 30px;
+  }
+  .blogHeader {
+    font-size: 2em;
+  }
+  .blogTagline {
+    font-size: 0.9em;
+  }
+}

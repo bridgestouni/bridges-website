@@ -1,0 +1,80 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.officeHours {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.officeHoursSection {
+  /* border: 1px solid red; */
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.officeHoursHero {
+  padding-bottom: 60px;
+}
+
+.officeHoursHeader {
+  font-size: 3.8em;
+  font-weight: 600;
+}
+
+.officeHoursTagline {
+  max-width: 400px;
+  /* border: 1px solid red; */
+  padding-bottom: 10px;
+}
+
+.volunteerLink {
+  padding: 11px 25px;
+  color: white;
+  background-color: var(--accent);
+  font-weight: 600;
+  border-radius: 35px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.officeHoursGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .officeHoursHeader {
+    font-size: 3em;
+  }
+
+  .officeHoursGrid {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .officeHoursHeader {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .officeHoursTagline {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .volunteerLink {
+    text-align: center;
+    margin: 0 auto;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,130 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.teamCard {
+  /* border: 1px solid red; */
+  max-width: 400px;
+  padding: 0 40px;
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* margin-top: 60px; */
+}
+
+.memberImageContainer {
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.memberImage {
+  height: 200px;
+  position: relative;
+}
+
+.chiddhanyaImage {
+  left: -30px;
+}
+
+.leesaImage {
+  left: -20px;
+}
+
+.harjotImage {
+  left: -30px;
+}
+
+.viImage {
+  left: -40px;
+}
+
+.hussainImage {
+  left: -35px;
+}
+
+.stephanieImage {
+  left: -45px;
+}
+
+.aviImage {
+  left: -25px;
+}
+
+.andrickImage {
+  left: -30px;
+}
+
+.varunImage {
+  left: -25px;
+}
+
+.memberInfo {
+  /* border: 1px solid red; */
+  padding-top: 20px;
+}
+
+.memberInfo h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  color: var(--dark);
+}
+
+.memberInfo p {
+  font-size: 1em;
+  text-align: center;
+  margin: 0;
+  color: var(--secondary);
+}
+
+@media screen and (max-width: 992px) {
+  .teamCard {
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .memberImageContainer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .memberImage {
+    height: 150px;
+  }
+
+  .chiddhanyaImage {
+    left: -22px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .teamCard {
+    flex-basis: 50%;
+  }
+
+  .memberImageContainer {
+    width: 125px;
+    height: 125px;
+  }
+
+  .memberImage {
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .teamCard {
+    flex-basis: 100%;
+  }
+}

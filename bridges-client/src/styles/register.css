@@ -1,0 +1,11 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.register {
+  height: 100vh;
+  border: 1px solid red;
+}

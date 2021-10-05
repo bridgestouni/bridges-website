@@ -1,0 +1,13 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+body {
+  font-family: "BR Firma", Roboto, sans-serif;
+  background-color: var(--background);
+  /* border: 5px solid orange; */
+  width: 100%;
+}

@@ -1,0 +1,188 @@
+:root {
+  --accent: #2ecec5;
+  --secondary: #445277;
+  --dark: #0a1636;
+  --background: #fcfdfe;
+}
+
+.editArticleContainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.editArticleHero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* border: 1px solid red; */
+}
+
+.editArticleHeader {
+  font-size: 3.8em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.editArticleTagline {
+  color: var(--secondary);
+  padding-top: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.editArticleTaglineButton {
+  text-align: center;
+  /* border: 1px solid red; */
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.editArticleFormContainer {
+  /* border: 1px solid purple; */
+}
+
+.editArticleForm {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  /* border: 1px solid darkblue; */
+  background-color: rgba(255, 255, 255, 0.516);
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.editArticleFormSec1,
+.editArticleFormSec2 {
+  /* border: 1px solid magenta; */
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ccd2e450;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(204, 210, 228, 0.5);
+}
+
+.editArticleFormSec1 {
+  /* margin-bottom: 20px; */
+}
+
+.secTitle {
+  padding: 0;
+  margin: 0;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  flex-basis: 30%;
+}
+
+.formGroup input[type="text"] {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--dark);
+  font-size: 0.9em;
+  flex-grow: 1;
+  outline: none;
+}
+
+.formGroup textarea {
+  flex-grow: 1;
+  background: transparent;
+  font-size: 0.9em;
+  outline: none;
+}
+
+.articleBodyGeneratorContainer {
+  /* border: 1px solid red; */
+}
+
+.articleBodyItem {
+  background-color: rgba(255, 255, 255, 0.516);
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.templateHead {
+  /* border: 1px solid green; */
+}
+
+.templateBody {
+  /* border: 1px solid orange; */
+  display: flex;
+}
+
+.subheadInput,
+.paragraphInput {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  margin-top: 10px;
+  outline: none;
+  font-size: 0.9em;
+}
+
+.editArticleFormSubmitButton {
+  /* border: 1px solid red; */
+  width: 200px;
+  background: transparent;
+  padding: 6px 10px;
+  margin: 0;
+  border: none;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  font-size: 800;
+  box-shadow: 0px 4px 10px rgba(204, 210, 228, 0.5);
+  margin-bottom: 40px;
+}
+
+.editArticleFormSubmitButton:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .editArticleHeader {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .editArticleContainer .nav-link {
+    display: block;
+  }
+
+  .editArticleContainer .nav-links ul li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .addArticleHeader {
+    font-size: 2.5em;
+  }
+}

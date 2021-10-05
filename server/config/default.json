@@ -1,0 +1,6 @@
+{
+    "mongoURI":
+        "mongodb+srv://avipatel:pizzacompliance@gettingstarted.bafke.mongodb.net/MyFirstDatabase?retryWrites=true&w=majority",
+    "secretOrKey":
+        "secret"
+}
