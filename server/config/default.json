@@ -1,6 +1,10 @@
 {
     "mongoURI":
-        "mongodb+srv://avipatel:pizzacompliance@gettingstarted.bafke.mongodb.net/MyFirstDatabase?retryWrites=true&w=majority",
+        "mongodb+srv://bridgesadmin:b2u%40!2001@bridges.4cytv.mongodb.net/Database?retryWrites=true&w=majority",
     "secretOrKey":
         "secret"
 }
+
+
+// mongodb+srv://bridgesadmin:b2u%40!2001@bridges.4cytv.mongodb.net/Database?retryWrites=true&w=majority
+// mongodb+srv://avipatel:pizzacompliance@gettingstarted.bafke.mongodb.net/MyFirstDatabase?retryWrites=true&w=majority

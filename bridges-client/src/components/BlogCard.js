@@ -11,8 +11,11 @@ const BlogCard = (props) => {
 
   return (
     <div className="blogCard">
-      <div className="blogCardImageContainer">
-        <img src={coverImage.default} className="blogCardImage" alt="..." />
+      <div
+        className="blogCardImageContainer"
+        style={{ backgroundImage: "url(" + coverImage.default + ")" }}
+      >
+        {/* <img src={coverImage.default} className="blogCardImage" alt="..." /> */}
       </div>
       <div className="blogCardContent">
         <div className="blogCardInfo">

@@ -73,8 +73,8 @@ class AddArticle extends Component {
     fd.append("description", this.state.description);
     fd.append("published_date", this.state.published_date);
     fd.append("coverImage", this.state.coverImage);
-    fd.append("body", JSON.stringify(body));
-    fd.append("bodyType", JSON.stringify(bodyType));
+    fd.append("body", body);
+    fd.append("bodyType", bodyType);
 
     // Display the key/value pairs
     for (var pair of fd.entries()) {

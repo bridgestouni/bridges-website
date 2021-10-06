@@ -231,7 +231,7 @@ const Blog = () => {
             return (
               <BlogCard
                 title={article.title}
-                coverImage={"test-background.jpg"}
+                coverImage={article.coverImage}
                 tags={article.tags}
                 description={article.description}
                 id={article._id}

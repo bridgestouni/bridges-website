@@ -148,9 +148,17 @@ class ViewArticle extends Component {
 
     for (var i = 0; i < this.state.bodyType.length; ++i) {
       console.log("Adding elements..");
+      console.log(this.state.body[i]);
       if (this.state.bodyType[i] == "paragraph") {
-        template = `<p class="articleParagraph">${this.state.body[i]}</p>`;
-        // console.log(this.state.body[i]);
+        if (
+          this.state.body[i].includes("<ul class='dash-list'>") ||
+          this.state.body[i].includes("<ol class='numbered-list'>")
+        ) {
+          template = `${this.state.body[i]}`;
+        } else {
+          template = `<p class="articleParagraph">${this.state.body[i]}</p>`;
+          // console.log(this.state.body[i]);
+        }
       } else {
         template = `<p class="articleSubtitle">${this.state.body[i]}</p>`;
         // console.log(this.state.body[i]);
@@ -176,12 +184,17 @@ class ViewArticle extends Component {
               Posted {this.state.published_date}
             </p>
           </div>
-          <div className="articleCoverImageContainer">
-            <img
+          <div
+            className="articleCoverImageContainer"
+            style={{
+              backgroundImage: "url(" + this.state.coverImage.default + ")",
+            }}
+          >
+            {/*<img
               src={this.state.coverImage.default}
               className="articleCoverImage"
               alt="..."
-            />
+            />*/}
           </div>
           <div className="articleBody"></div>
         </div>
@@ -198,7 +211,7 @@ class ViewArticle extends Component {
                 return (
                   <BlogCard
                     title={article.title}
-                    coverImage={"test-background.jpg"}
+                    coverImage={article.coverImage}
                     tags={article.tags}
                     description={article.description}
                     id={article._id}
