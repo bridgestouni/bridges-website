@@ -1,1 +1,1 @@
-web: gunicorn bridgestouni:app
+web: node index.js
