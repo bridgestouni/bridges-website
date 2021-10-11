@@ -15,7 +15,7 @@ app.use(
 );
 app.use(express.json());
 
-const port = process.env.PORT || 8082;
+const port = process.env.PORT || 5830;
 
 // Connect Database
 const connectDB = require("./config/db");
