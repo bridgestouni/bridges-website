@@ -1,1 +1,1 @@
-npmweb: gunicorn bridges-website.wsgi
+web: gunicorn bridges-website.wsgi
