@@ -1,1 +1,1 @@
-web: node app.js
+web: gunicorn bridges-website.wsgi
