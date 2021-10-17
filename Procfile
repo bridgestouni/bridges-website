@@ -1,1 +1,1 @@
-web: gunicorn bridges-website.wsgi
+web: bin/boot
